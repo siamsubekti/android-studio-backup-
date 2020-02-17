@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/etStartPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Start Point"/>
+        <Button
+            android:id="@+id/btnSubmitStart"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:onClick="submitStartPoint"
+            android:text="submit"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:onClick="increment"
+            android:text="+"
+            android:textSize="40px"/>
+
+        <TextView
+            android:id="@+id/etNol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0" />
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:text="-"
+            android:onClick="decrement"
+            android:textSize="40px"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="clear"
+        android:text="clear"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/move_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/move_activity" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/move_activity_data"
+            android:layout_marginTop="10dp"
+            android:text="@string/move_activity_data"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MySeekBar"
+        android:progressTint="@android:color/holo_purple"
+        android:thumbTint="@color/colorPrimaryDark"
+        />
+
+</LinearLayout>

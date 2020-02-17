@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Application Increment and Decrement</string>
+    <string name="move_activity">move activity</string>
+    <string name="just_moved">Just Moved</string>
+    <string name="move_activity_data">move to send data</string>
+    <string name="third">third</string>
+</resources>
